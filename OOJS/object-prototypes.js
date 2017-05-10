@@ -36,6 +36,15 @@ ravi.sayHello();
  * the attached thing will be available to the new object.
  * This is proof that properties aren't "copied" during instantiation like in
  * classical inheritance.
+ * 
+ * ravi:
+ *   - name
+ *   - age
+ *   - sleep
+ *   - __proto__:
+ *     - constructor
+ *     - sayHello
+ * 
 */
 
 
