@@ -17,6 +17,8 @@ let ravi = new Person("Ravi", 24);
  * 
 */
 
+console.log(ravi.constructor.name); // Output: Person
+
 
 // ravi.sayHello();
 // Doesn't work. "ravi" doesn't have "sayHello",
@@ -53,3 +55,5 @@ let mashru = Object.create(ravi);
 /*
  * "mashru" will be an empty object with "mashru.__proto__" = "ravi"
 */
+
+console.log(mashru.constructor.name); // Output: Person
