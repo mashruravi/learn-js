@@ -57,3 +57,21 @@ let mashru = Object.create(ravi);
 */
 
 console.log(mashru.constructor.name); // Output: Person
+
+/*
+ * Common pattern:
+ * ---------------
+ * Define properties inside the constructor,
+ * and the methods on the prototype.
+*/
+function Human(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+}
+
+Human.prototype.getFullName = function() {
+    return this.firstName + " " + this.lastName;
+}
+
+let jake = new Human("Jake", "Gyllenhaal");
+console.log(jake.getFullName());
