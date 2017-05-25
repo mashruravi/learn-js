@@ -75,3 +75,24 @@ Human.prototype.getFullName = function() {
 
 let jake = new Human("Jake", "Gyllenhaal");
 console.log(jake.getFullName());
+
+
+/* Trivia:
+ * =======
+ * If you use a for ... in loop to iterate over an object, any property that can be
+ * reached via its chain (and is also enumerable) will be enumerated
+*/
+var anotherObject = {
+	a: 2
+};
+
+// create an object linked to `anotherObject`
+var myObject = Object.create( anotherObject );
+
+for (var k in myObject) {
+	console.log("found: " + k);
+}
+// Output:
+// found: a
+
+("a" in myObject); // Result: true

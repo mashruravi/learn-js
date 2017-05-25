@@ -74,3 +74,12 @@ let teacher = new Teacher("Davie", "Jones", 33, "male", ["Chess", "Football", "R
 console.log(teacher.age); // 33
 console.log(teacher.interests[0]); // Chess
 teacher.greeting(); // Hello, I am Davie Jones, and I teach History.
+
+/*
+ * There are three types of properties/methods:
+ * 
+ * 1. Those defined inside a constructor function, that are given to object instances
+ * 2. Those defined directly on the constructor, and are available only on the constructor
+ * 3. Those defined on a constructor's prototype, which are inherited by all instances and
+ *    inheriting object classes.
+*/
